@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1A1A1A;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  max-width: 1200px;
+  margin: auto;
+}
+
+main .boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 10vh;
+}
+
+main .boxes .box {
+  width: 300px;
+  height: 300px;
+  padding: 30px;
+  background: linear-gradient(145deg, #72f, #c1b);
+  border-radius: 30px;
+}
+
+main .boxes .box h1 {
+  margin: 0;
+}
+
+main .boxes .box.box-2 {
+  width: 200px;
+  height: 200px;
+}
+
+main h2 {
+  border: 1px solid red;
+}
+/*# sourceMappingURL=style.css.map */

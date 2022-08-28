@@ -1,0 +1,56 @@
+//slideInRight
+@keyframes slideInRight {
+    from{
+        transform: translateX(-$translateDistance);
+    }
+}
+.y-slideInRight{
+    @include animate(slideInRight);
+}
+
+.y-slideOutRight{
+    @include animate(slideInRight, reverse);
+}
+
+//slideInLeft
+@keyframes slideInLeft {
+    from{
+        transform: translateX($translateDistance);
+    }
+}
+.y-slideInLeft{
+    @include animate(slideInLeft);
+}
+
+.y-slideOutLeft{
+    @include animate(slideOutLeft, reverse);
+}
+
+//slideInBottom
+@keyframes slideInBottom {
+    from{
+        transform: translateY(-$translateDistance);
+    }
+}
+.y-slideInBottom{
+    @include animate(slideInBottom);
+}
+
+.y-slideOutBottom{
+    @include animate(slideInBottom, reverse);
+}
+
+//slideInTop
+@keyframes slideInTop {
+    from{
+        transform: translateY($translateDistance);
+    }
+}
+.y-slideInTop{
+    @include animate(slideInTop);
+}
+
+.y-slideOutTop{
+    @include animate(slideInTop, reverse);
+}
+

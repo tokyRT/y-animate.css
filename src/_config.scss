@@ -1,0 +1,17 @@
+$animationDuration: 0.8s;
+$timingFn: cubic-bezier(0.18, 0.89, 0.32, 1.27);
+$translateDistance: 100px;
+
+@mixin animConfig {
+    animation-timing-function: $timingFn;
+    //default animation duration
+    animation-duration: $animationDuration;
+}
+
+@mixin animate($animationName, $direction: normal) {
+    @include animConfig;
+    animation-name: $animationName;
+    animation-direction: $direction;
+}
+
+

@@ -1,0 +1,73 @@
+//fade
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+}
+.y-fadeIn{
+    @include animate(fadeIn);
+}
+
+.y-fadeOut{
+    @include animate(fadeIn, reverse);
+}
+
+//fadeRight
+@keyframes fadeInRight {
+    from{
+        opacity: 0;
+        transform: translateX(-$translateDistance);
+    }
+}
+.y-fadeInRight{
+    @include animate(fadeInRight);
+}
+
+.y-fadeOutRight{
+    @include animate(fadeInRight, reverse);
+}
+
+//fadeLeft
+@keyframes fadeInLeft {
+    from{
+        opacity: 0;
+        transform: translateX($translateDistance);
+    }
+}
+.y-fadeInLeft{
+    @include animate(fadeInLeft);
+}
+
+.y-fadeOutLeft{
+    @include animate(fadeInLeft, reverse);
+}
+
+//fadeTop
+@keyframes fadeInTop {
+    from{
+        opacity: 0;
+        transform: translateY($translateDistance);
+    }
+}
+.y-fadeInTop{
+    @include animate(fadeInTop);
+}
+
+.y-fadeOutTop{
+    @include animate(fadeInTop, reverse);
+}
+
+//fadeBottom
+@keyframes fadeInBottom {
+    from{
+        opacity: 0;
+        transform: translateY(-$translateDistance);
+    }
+}
+.y-fadeInBottom{
+    @include animate(fadeInBottom);
+}
+
+.y-fadeOutBottom{
+    @include animate(fadeInBottom, reverse);
+}

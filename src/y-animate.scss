@@ -1,0 +1,31 @@
+@import 'config';
+@import './animations/slide';
+@import './animations/fade';
+
+//animation duration
+//custom animation duration in seconds [1-10] seconds
+@for $i from 1 to 11 {
+    .y-duration-#{$i}s {
+        animation-duration: #{$i}s;
+    }
+}
+//custom animation duration in ms [100-1000] seconds
+@for $i from 1 to 11 {
+    .y-duration-#{$i*100}ms {
+        animation-duration: #{$i * 100}ms;
+    }
+}
+
+//animation delay
+//custom animation delay in seconds [1-10] seconds
+@for $i from 1 to 11 {
+    .y-delay-#{$i}s {
+        animation-delay: #{$i}s;
+    }
+}
+//custom animation delay in ms [100-1000] seconds
+@for $i from 1 to 11 {
+    .y-delay-#{$i*100}ms {
+        animation-delay: #{$i * 100}ms;
+    }
+}
