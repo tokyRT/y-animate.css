@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #1a1a1a;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+main {
+    max-width: 1200px;
+    margin: auto;
+    $box-bg: linear-gradient(145deg, #72f, #c1b);
+
+    .playground {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 70vh;
+        .boxes {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 10vh;
+            #boxForDemo {
+                width: 250px;
+                height: 250px;
+                padding: 30px;
+                background: $box-bg;
+                border-radius: 30px;
+                h1 {
+                    margin: 0;
+                    margin-top: 30px;
+                }
+                &.box-2 {
+                    width: 200px;
+                    height: 200px;
+                    &:hover {
+                        // animation: slideInRight .6s;
+                    }
+                }
+            }
+        }
+        .controlSection {
+            margin-top: 100px;
+            .select {
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+                button,
+                select {
+                    border-radius: 10px;
+                    font-size: 1.2em;
+                    color: white;
+                    background-color: transparent;
+                    border: 2px solid white;
+                    cursor: pointer;
+                }
+                select {
+                    padding: 20px 40px;
+                    option{
+                        color: initial;
+                    }
+                }
+                button {
+                    padding: 20px;
+                }
+            }
+            .animationName {
+                color: rgb(255, 145, 1);
+                background-color: rgb(22, 10, 51);
+                border-radius: 10px;
+                min-width: 300px;
+                padding: 20px 30px;
+                margin-top: 20px;
+                position: relative;
+                button{
+                    position: absolute;
+                    right: 20px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    background-color: transparent;
+                    border: 1px solid white;
+                    border-radius: 5px;
+                    color: white;
+                    padding: 10px;
+                    opacity: .7;
+                    cursor: pointer;
+                    display: none;
+                }
+                &:hover{
+                    button{
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}

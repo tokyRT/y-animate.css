@@ -6,13 +6,13 @@
 //custom animation duration in seconds [1-10] seconds
 @for $i from 1 to 11 {
     .y-duration-#{$i}s {
-        animation-duration: #{$i}s;
+        --y-animate-duration: #{$i}s;
     }
 }
 //custom animation duration in ms [100-1000] seconds
 @for $i from 1 to 11 {
     .y-duration-#{$i*100}ms {
-        animation-duration: #{$i * 100}ms;
+        --y-animate-duration: #{$i * 100}ms;
     }
 }
 
@@ -29,3 +29,5 @@
         animation-delay: #{$i * 100}ms;
     }
 }
+
+//timing function

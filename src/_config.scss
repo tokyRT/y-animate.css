@@ -2,10 +2,17 @@ $animationDuration: 0.8s;
 $timingFn: cubic-bezier(0.18, 0.89, 0.32, 1.27);
 $translateDistance: 100px;
 
+:root{
+    --y-animate-duration: #{$animationDuration};
+    --y-animate-delay: 0s;
+    --y-animate-timing-function: #{$timingFn};
+}
+
 @mixin animConfig {
-    animation-timing-function: $timingFn;
     //default animation duration
-    animation-duration: $animationDuration;
+    animation-duration: var(--y-animate-duration);
+    animation-delay: var(--y-animate-delay);
+    animation-timing-function: var(--y-animate-timing-function);
 }
 
 @mixin animate($animationName, $direction: normal) {

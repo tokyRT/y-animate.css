@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>y-animate</title>
+    <link rel="stylesheet" href="../dist/y-animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <main>
+        <h1>
+            y-animate demo
+        </h1>
+        <div class="playground">
+            <div class="boxes">
+                <div class="y-fadeOutTop" id="boxForDemo">
+                    <h1>Hello 👋</h1>
+                </div>
+            </div>
+            <div class="controlSection">
+                <div class="select">
+                    <select name="animationName" id="animationName">
+                        <option value="y-fadeOutTop">y-fadeOutTop</option>
+                        <option value="y-fadeInRight">y-fadeInRight</option>
+                        <option value="y-fadeInLeft">y-fadeInLeft</option>
+                        <option value="y-fadeIn">y-fadeIn</option>
+                    </select>
+                    <button title="restart animation" id="restartBtn"><i class="fa-solid fa-arrows-rotate"></i></button>
+                </div>
+                <div class="animationName">
+                    <code class="" id="animationNameCode">y-fadeOutTop</code>
+                    <button title="Copy class name" id="copyClassNameBtn">
+                        <i class="fa-solid fa-copy"></i>
+                        <!-- <i class="fa-solid fa-check"></i> -->
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="doc">
+            <h1>Documenation goes here</h1>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+
+</html>
